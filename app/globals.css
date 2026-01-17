@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 262 83% 58%;
+  --secondary: 190 95% 39%;
+  --accent: 38 92% 50%;
+  --dark: 222 47% 11%;
+}
+
+[dir="rtl"] {
+  direction: rtl;
+}
+
+body {
+  @apply bg-dark text-slate-50 font-sans;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-purple-500/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-purple-500;
+}
