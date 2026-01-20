@@ -14,8 +14,6 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "convex": "latest",
-    "@convex-dev/react": "latest",
-    "@convex-dev/auth": "latest",
     "tailwindcss": "^3.4.1",
     "framer-motion": "^10.16.4",
     "lucide-react": "latest",
