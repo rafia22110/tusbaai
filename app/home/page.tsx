@@ -43,7 +43,7 @@ export default function HomePage() {
               <BookOpen className="w-8 h-8 text-purple-400" />
               <h2 className="text-2xl font-bold">📖 פרשת השבוע</h2>
             </div>
-            <div className="space-y-3">
+            {/* <div className="space-y-3">
               {parashot ? (
                 parashot.map((p) => (
                   <div key={p._id} className="border-r-4 border-purple-500 pr-3">
@@ -54,7 +54,7 @@ export default function HomePage() {
               ) : (
                 <p className="text-slate-500">טוען תוכן...</p>
               )}
-            </div>
+            </div> */}
           </div>
 
           {/* מסלולי למידה */}
