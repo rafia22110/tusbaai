@@ -1,12 +1,12 @@
 "use client";
-import { useQuery } from "convex/react";
-import { api } from "@/convex/_generated/api";
+// import { useQuery } from "convex/react";
+// import { api } from "@/convex/_generated/api";
 import Link from "next/link";
 import { BookOpen, GraduationCap, MessageSquare, Archive } from "lucide-react";
 
 export default function HomePage() {
-  const parashot = useQuery(api.content.getParashotContent, { limit: 5 });
-  const recentContent = useQuery(api.content.getPublishedContent, { limit: 3 });
+//   const parashot = useQuery(api.content.getParashotContent, { limit: 5 });
+//   const recentContent = useQuery(api.content.getPublishedContent, { limit: 3 });
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950/20 to-slate-950" dir="rtl">
