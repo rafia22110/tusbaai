@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ConvexProvider, ConvexReactClient } from "@convex-dev/react";
+import { ConvexProvider, ConvexReactClient } from "convex/react";
 import "./globals.css";
 
 const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
