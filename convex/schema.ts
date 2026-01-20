@@ -1,9 +1,7 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
-import { authTables } from "@convex/auth/server";
 
 export default defineSchema({
-  ...authTables,
 
   // תוכן (פרשות, סיפורים, גלריה)
   content: defineTable({
