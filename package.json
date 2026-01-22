@@ -4,7 +4,8 @@
   "description": "TUSBA AI - Dynamic Torah + Innovation Platform",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build"npx convex deploy --cmd 'npm run build:next'",
+        "build:next": "next build",
     "start": "next start",
     "convex": "convex dev",
     "convex:deploy": "convex deploy"
