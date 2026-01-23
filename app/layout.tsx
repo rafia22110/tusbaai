@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ConvexProvider, ConvexReactClient } from "convex/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
@@ -22,6 +23,7 @@ export default function RootLayout({
         <ConvexProvider client={convex}>
           {children}
         </ConvexProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
