@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { ConvexProvider, ConvexReactClient } from "convex/react";
+import ConvexClientProvider from "./ConvexClientProvider";
 import "./globals.css";
-
-const convex = new ConvexReactClient(process.env.NEXT_PUBLIC_CONVEX_URL!);
 
 export const metadata: Metadata = {
   title: "TUSBA AI - Torah + Innovation",
@@ -19,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="he" dir="rtl">
       <body className="bg-slate-900 text-white font-sans">
-        <ConvexProvider client={convex}>
+        <ConvexClientProvider>
           {children}
-        </ConvexProvider>
+        </ConvexClientProvider>
       </body>
     </html>
   );

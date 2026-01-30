@@ -14,7 +14,8 @@
 }
 
 body {
-  @apply bg-dark text-slate-50 font-sans;
+  background-color: #0F172A;
+  color: #F8FAFC;
 }
 
 /* Custom scrollbar */
