@@ -1,19 +1,19 @@
 "use client";
-// import { useQuery } from "convex/react";
-// import { api } from "@/convex/_generated/api";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/_generated/api";
 import Link from "next/link";
 import { useState } from "react";
 import { Search, Tag, BookOpen, Clock } from "lucide-react";
 
 export default function StoriesPage() {
   const [searchTerm, setSearchTerm] = useState("");
-//   const stories = useQuery(api.content.getStoriesContent, { limit: 50 });
-//   const searchResults = useQuery(
-//     api.content.searchContent,
-//     searchTerm.length > 2 ? { searchTerm, language: "he" } : "skip"
-//   );
+  const stories = useQuery(api.content.getStoriesContent, { limit: 50 });
+  const searchResults = useQuery(
+    api.content.searchContent,
+    searchTerm.length > 2 ? { searchTerm, language: "he" } : "skip"
+  );
 
-//   const displayStories = searchTerm.length > 2 ? searchResults : stories;
+  const displayStories = searchTerm.length > 2 ? searchResults : stories;
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950/20 to-slate-950" dir="rtl">
